@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-background {
+  background-image: url("./images/Banner.svg");
+  background-size: cover;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+.animation:hover,
+.animated1:hover {
+  animation-play-state: paused;
+}
+.animation {
+  animation: animate 20s linear infinite;
+
+  position: relative;
+}
+.animation1 {
+  animation: animte 20s linear infinite;
+  animation-delay: 10s;
+
+  position: relative;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 8));
+  }
+}
+.example {
+  overflow-x: scroll;
+}
+.scrolling::-webkit-scrollbar {
+  display: none;
+}
